@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador ONE</title>
+</head>
+<body>
+    
+    <header>
+        <img class="logo" src="img/logo.png" alt="logo-alura">
+    </header>
+
+    <main>
+       <div class="boxes"> 
+            <div action="" class="box-entrada">
+                <textarea name="entrada" id="texto-entrada" maxlength="311" placeholder="Ingrese su texto aquí..."></textarea>
+                <div class="botones">  
+                    <input class="encripta-btn" type="submit" name="encriptar" id="encripta-msj" value="Encriptar">
+                    <input class="desencripta-btn" type="submit" name="decriptar" id="desencripta-msj" value="Desencriptar">
+                </div>  
+            </div>
+
+            <div action="" class="box-salida">
+                <div class="campo">
+                    <textarea name="resultado" id="texto-salida" readonly ></textarea>
+                </div>
+                
+                <img class="muñeco" src="img/muñeco.png" alt="muñecoimg">
+                <p class="textointerno">Ningún mensaje fue encontrado</p>
+                <p class="textointerno2">Ingresa el texto que desea encriptar o desencriptar.</p>
+
+                <div class="btn-copy">
+                     <input type="submit" value="Copiar">
+                </div>
+            </div>
+            
+      </div>    
+    </main>
+
+
+</body>
+</html>
