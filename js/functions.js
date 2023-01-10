@@ -1,9 +1,10 @@
+/*TEXTOS*/
 const txtingresado = document.querySelector("#texto-entrada");
 const txtresultado = document.querySelector("#texto-salida");
-
+/*BOTONES*/
 const encripta = document.querySelector("#encripta-msj");
 const desencripta = document.querySelector("#desencripta-msj");
-const copia = document.querySelector="btncopiar"
+const copia = document.querySelector("#btncopiar");
 
 function encriptar(){
     let texto = txtingresado.value.toLowerCase();
@@ -56,9 +57,15 @@ function desencriptar(){
     
 }
 
+    function copiar() {
+        let txtencriptado = txtresultado.value;
+        navigator.clipboard.writeText(txtencriptado);
+        
+      }
 
-
+ 
 
 
 encripta.onclick = encriptar;
 desencripta.onclick = desencriptar;
+copia.onclick = copiar;

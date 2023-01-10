@@ -13,6 +13,7 @@ header{
 }
 
 .boxes{
+    margin:auto;
     width: 100%;
     display: flex;
     vertical-align: top;
