@@ -87,6 +87,12 @@ textarea{
 }
 
 
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .botones{
     width: 100%;
     display: flex;
@@ -95,17 +101,35 @@ textarea{
     
 }
 
+
+#items-salida{
+    visibility: visible;
+}
+
 .btn-copy{
     margin-top: 1em;
     display: flex;
     justify-content: center;
+    visibility: hidden;
+    height: 450px;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+.copyestilo{
+    width: 250px;
+    height: 67px;
+    border-radius: 24px;
     font-size: 16px;
     border: solid 1px;
     border-color: #0A3871;
     color: #0A3871;
     background: #D8DFE8;
-    display: none;
-
 }
 
 .botones input{

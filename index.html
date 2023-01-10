@@ -14,13 +14,13 @@
 <body>
     
     <header>
-        <img class="logo" src="img/logo.png" alt="logo-alura">
+        <a href="https://www.aluracursos.com/"><img class="logo" src="img/logo.png" alt="logo-alura"></a> 
     </header>
 
     <main>
        <div class="boxes"> 
             <div action="" class="box-entrada">
-                <textarea name="entrada" id="texto-entrada" maxlength="311" placeholder="Ingrese su texto aquí..."></textarea>
+                <textarea name="entrada" id="texto-entrada" maxlength="250" placeholder="Ingrese su texto aquí..."></textarea>
                 <div class="botones">  
                    
                         <input class="encripta-btn" type="submit" id="encripta-msj" value="Encriptar">
@@ -29,24 +29,31 @@
                       
                 </div>  
             </div>
-
+         <div class="panel">   
             <div action="" class="box-salida">
                 <div class="campo">
                     <textarea name="resultado" id="texto-salida" readonly ></textarea>
                 </div>
+               <div id="items-salida">  
+                    <img class="muñeco" src="img/muñeco.png" alt="muñecoimg">
+                    <p class="textointerno">Ningún mensaje fue encontrado</p>
+                    <p class="textointerno2">Ingresa el texto que desea encriptar o desencriptar.</p>
+                </div>    
                 
-                <img class="muñeco" src="img/muñeco.png" alt="muñecoimg">
-                <p class="textointerno">Ningún mensaje fue encontrado</p>
-                <p class="textointerno2">Ingresa el texto que desea encriptar o desencriptar.</p>
+                
+            </div>
 
                 <div class="btn-copy">
-                     <input type="submit" value="Copiar">
-                </div>
-            </div>
+                    <input class="copyestilo" type="submit" id="btncopiar" value="Copiar">
+                </div> 
+        </div>   
             
-      </div>    
+
+        </div>   
+        
     </main>
 
+<script src="js/functions.js"></script>
 
 </body>
 </html>
