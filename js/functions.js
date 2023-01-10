@@ -60,7 +60,7 @@ function desencriptar(){
     function copiar() {
         let txtencriptado = txtresultado.value;
         navigator.clipboard.writeText(txtencriptado);
-        
+        alert("Texto copiado!");
       }
 
  
