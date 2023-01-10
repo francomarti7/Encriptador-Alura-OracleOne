@@ -8,53 +8,69 @@ const copia = document.querySelector("#btncopiar");
 
 function encriptar(){
     let texto = txtingresado.value.toLowerCase();
-    let txtencriptado = texto.replace(/e/g, "epe")
-    .replace(/i/g, "ipi")
-    .replace(/a/g, "apa")
-    .replace(/o/g, "opo")
-    .replace(/u/g, "upu");
 
-    /* (/e/g, "enter")
-    .replace(/i/g, "imes")
-    .replace(/a/g, "ai")
-    .replace(/o/g, "ober")
-    .replace(/u/g, "ufat"); */
-    
+    if (texto)  {
 
-    document.getElementById("items-salida").style.visibility = "hidden";
-    document.getElementById("btncopiar").style.visibility = "visible";
-    document.getElementById("btncopiar").style.display = "unset";
-    document.getElementById("texto-salida").style.display = "inline";
-    
-    txtresultado.value = txtencriptado;
-    
-    document.getElementById("texto-entrada").value = '';
+        let txtencriptado = texto.replace(/e/g, "epe")
+        .replace(/i/g, "ipi")
+        .replace(/a/g, "apa")
+        .replace(/o/g, "opo")
+        .replace(/u/g, "upu");
+
+        /* (/e/g, "enter")
+        .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
+        .replace(/o/g, "ober")
+        .replace(/u/g, "ufat"); */
+        
+
+        document.getElementById("items-salida").style.visibility = "hidden";
+        document.getElementById("btncopiar").style.visibility = "visible";
+        document.getElementById("btncopiar").style.display = "unset";
+        document.getElementById("texto-salida").style.display = "inline";
+        
+        txtresultado.value = txtencriptado;
+        
+        document.getElementById("texto-entrada").value = '';
+
+} else {
+    alert("Por favor ingrese un texto!");
+}
+
+
 }
 
 function desencriptar(){
     let texto = txtingresado.value.toLowerCase();
-    let txtencriptado = texto.replace(/epe/g, "e")
-    .replace(/ipi/g, "i")
-    .replace(/apa/g, "a")
-    .replace(/opo/g, "o")
-    .replace(/upu/g, "u");
 
-    /* (/e/g, "enter")
-    .replace(/i/g, "imes")
-    .replace(/a/g, "ai")
-    .replace(/o/g, "ober")
-    .replace(/u/g, "ufat"); */
-    
+    if (texto)  {
 
-    document.getElementById("items-salida").style.visibility = "hidden";
-    document.getElementById("btncopiar").style.visibility = "visible";
-    document.getElementById("btncopiar").style.display = "unset";
-    document.getElementById("texto-salida").style.display = "inline";
-    
-    txtresultado.value = txtencriptado;
+        let txtencriptado = texto.replace(/epe/g, "e")
+        .replace(/ipi/g, "i")
+        .replace(/apa/g, "a")
+        .replace(/opo/g, "o")
+        .replace(/upu/g, "u");
 
-    document.getElementById("texto-entrada").value = '';
-    
+        /* (/e/g, "enter")
+        .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
+        .replace(/o/g, "ober")
+        .replace(/u/g, "ufat"); */
+        
+
+        document.getElementById("items-salida").style.visibility = "hidden";
+        document.getElementById("btncopiar").style.visibility = "visible";
+        document.getElementById("btncopiar").style.display = "unset";
+        document.getElementById("texto-salida").style.display = "inline";
+        
+        txtresultado.value = txtencriptado;
+
+        document.getElementById("texto-entrada").value = '';
+        
+    } else {
+        alert("Por favor ingrese un texto!");
+    }
+
 }
 
     function copiar() {
