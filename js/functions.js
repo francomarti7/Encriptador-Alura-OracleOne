@@ -6,6 +6,7 @@ const encripta = document.querySelector("#encripta-msj");
 const desencripta = document.querySelector("#desencripta-msj");
 const copia = document.querySelector("#btncopiar");
 
+
 function encriptar(){
     let texto = txtingresado.value.toLowerCase();
 
@@ -35,6 +36,7 @@ function encriptar(){
 
 } else {
     alert("Por favor ingrese un texto!");
+    document.getElementById("alerta").style.color = "#FF0000";
 }
 
 
@@ -69,6 +71,7 @@ function desencriptar(){
         
     } else {
         alert("Por favor ingrese un texto!");
+        document.getElementById("alerta").style.color = "#FF0000";
     }
 
 }
