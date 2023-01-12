@@ -7,9 +7,14 @@ const desencripta = document.querySelector("#desencripta-msj");
 const copia = document.querySelector("#btncopiar");
 
 
+function sacoacento(text) {
+    return text.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
+
 function encriptar(){
     let texto = txtingresado.value.toLowerCase();
-
+    texto = sacoacento(texto);
     if (texto)  {
 
         let txtencriptado = texto.replace(/e/g, "epe")
@@ -24,20 +29,24 @@ function encriptar(){
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat"); */
         
-
         document.getElementById("items-salida").style.visibility = "hidden";
         document.getElementById("btncopiar").style.visibility = "visible";
         document.getElementById("btncopiar").style.display = "unset";
         document.getElementById("texto-salida").style.display = "inline";
+        document.getElementById("alerta").style.color = "#FF0000";
         
         txtresultado.value = txtencriptado;
         
         document.getElementById("texto-entrada").value = '';
+        document.getElementById("alerta").style.color = "#636c72";
+        document.getElementById("alert").style.filter = "none";
 
 } else {
     alert("Por favor ingrese un texto!");
     document.getElementById("alerta").style.color = "#FF0000";
+    document.getElementById("alert").style.filter = "invert(34%) sepia(80%) saturate(6646%) hue-rotate(343deg) brightness(122%) contrast(131%)"
 }
+
 
 
 }
@@ -68,10 +77,13 @@ function desencriptar(){
         txtresultado.value = txtencriptado;
 
         document.getElementById("texto-entrada").value = '';
+        document.getElementById("alerta").style.color = "#636c72";
+        document.getElementById("alert").style.filter = "none";
         
     } else {
         alert("Por favor ingrese un texto!");
         document.getElementById("alerta").style.color = "#FF0000";
+        document.getElementById("alert").style.filter = "invert(34%) sepia(80%) saturate(6646%) hue-rotate(343deg) brightness(122%) contrast(131%)";
     }
 
 }

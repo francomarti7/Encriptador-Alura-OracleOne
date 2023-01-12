@@ -158,7 +158,10 @@ textarea{
 
 .sugerencia img{
    object-fit: contain;
-   vertical-align: center;
+   display: block;
+   padding-left: 5px;
+   padding-bottom: 7px;
+   filter: none;
 }
 
 
