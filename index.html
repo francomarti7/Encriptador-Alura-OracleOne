@@ -20,7 +20,7 @@
     <main>
        <div class="boxes"> 
             <div action="" class="box-entrada">
-                <textarea oninput="this.value=this.value.replace(/[^a-zA-Z]+/g,'')" name="entrada" id="texto-entrada" maxlength="250" placeholder="Ingrese su texto aquí..."></textarea>
+                <textarea oninput="this.value=this.value.replace(/[^a-zA-Z ]+/g,'')" name="entrada" id="texto-entrada" maxlength="250" placeholder="Ingrese su texto aquí..."></textarea>
                 <div class="sugerencia">
                     <img src="img/vector.png" id="alert" alt="alert">
                     <p id="alerta">Por favor ingrese un texto sin acentos ni mayúsculas.</p>
@@ -36,7 +36,7 @@
             <div class="panel">   
                 <div action="" class="box-salida">
                     <div class="campo">
-                        <textarea oninput="this.value=this.value.replace(/[^a-zA-Z]+/g,'')" name="resultado" id="texto-salida" readonly ></textarea>
+                        <textarea oninput="this.value=this.value.replace(/[^a-zA-Z ]+/g,'')" name="resultado" id="texto-salida" readonly ></textarea>
                     </div>
                 <div id="items-salida">  
                         <img class="muñeco" src="img/muñeco.png" alt="muñecoimg">
