@@ -17,13 +17,16 @@ function encriptar(){
     texto = sacoacento(texto);
     if (texto)  {
 
-        let txtencriptado = texto.replace(/e/g, "epe")
-        .replace(/i/g, "ipi")
-        .replace(/a/g, "apa")
-        .replace(/o/g, "opo")
-        .replace(/u/g, "upu");
+        let txtencriptado = texto.replace(/e/g, "enter")
+        .replace(/i/g, "imes")
+        .replace(/a/g, "ai")
+        .replace(/o/g, "ober")
+        .replace(/u/g, "ufat");
+        
+       
 
-        /* (/e/g, "enter")
+        /* PRUEBA EN JERINGOSO
+         (/e/g, "enter")
         .replace(/i/g, "imes")
         .replace(/a/g, "ai")
         .replace(/o/g, "ober")
@@ -56,17 +59,20 @@ function desencriptar(){
 
     if (texto)  {
 
-        let txtencriptado = texto.replace(/epe/g, "e")
+        let txtencriptado = texto.replace(/enter/g, "e")
+        .replace(/imes/g, "i")
+        .replace(/ai/g, "a")
+        .replace(/ober/g, "o")
+        .replace(/ufat/g, "u");
+        
+        /*PRUEBA EN JERINGOSO
+        (/epe/g, "e")
         .replace(/ipi/g, "i")
         .replace(/apa/g, "a")
         .replace(/opo/g, "o")
-        .replace(/upu/g, "u");
+        .replace(/upu/g, "u"); */
 
-        /* (/e/g, "enter")
-        .replace(/i/g, "imes")
-        .replace(/a/g, "ai")
-        .replace(/o/g, "ober")
-        .replace(/u/g, "ufat"); */
+
         
 
         document.getElementById("items-salida").style.visibility = "hidden";
@@ -91,6 +97,7 @@ function desencriptar(){
     function copiar() {
         let txtencriptado = txtresultado.value;
         navigator.clipboard.writeText(txtencriptado);
+        /*document.getElementById("texto-entrada").value = txtencriptado;*/
         alert("Texto copiado!");
       }
 

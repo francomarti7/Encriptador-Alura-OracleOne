@@ -197,3 +197,7 @@ textarea{
     background: #a5aab1;
     transition: 0.5s;
 }
+
+footer{
+    background: url(img/bg.jpg);
+}
