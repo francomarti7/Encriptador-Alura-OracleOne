@@ -45,7 +45,11 @@ function encriptar(){
         document.getElementById("alert").style.filter = "none";
 
 } else {
-    alert("Por favor ingrese un texto!");
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'No ingresaste ningun texto!',
+      })
     document.getElementById("alerta").style.color = "#FF0000";
     document.getElementById("alert").style.filter = "invert(34%) sepia(80%) saturate(6646%) hue-rotate(343deg) brightness(122%) contrast(131%)"
 }
@@ -87,7 +91,11 @@ function desencriptar(){
         document.getElementById("alert").style.filter = "none";
         
     } else {
-        alert("Por favor ingrese un texto!");
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No ingresaste ningun texto!',
+          })
         document.getElementById("alerta").style.color = "#FF0000";
         document.getElementById("alert").style.filter = "invert(34%) sepia(80%) saturate(6646%) hue-rotate(343deg) brightness(122%) contrast(131%)";
     }
@@ -98,7 +106,11 @@ function desencriptar(){
         let txtencriptado = txtresultado.value;
         navigator.clipboard.writeText(txtencriptado);
         /*document.getElementById("texto-entrada").value = txtencriptado;*/
-        alert("Texto copiado!");
+        Swal.fire(
+            'Texto Copiado!',
+            'Tu texto fue copiado con exito!',
+            'success'
+          );
       }
 
  
