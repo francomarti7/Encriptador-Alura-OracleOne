@@ -49,6 +49,8 @@ function encriptar(){
         icon: 'error',
         title: 'Oops...',
         text: 'No ingresaste ningun texto!',
+        color: '#0A3871',
+        confirmButtonColor:'#0A3871'
       })
     document.getElementById("alerta").style.color = "#FF0000";
     document.getElementById("alert").style.filter = "invert(34%) sepia(80%) saturate(6646%) hue-rotate(343deg) brightness(122%) contrast(131%)"
@@ -95,6 +97,8 @@ function desencriptar(){
             icon: 'error',
             title: 'Oops...',
             text: 'No ingresaste ningun texto!',
+            color: '#0A3871',
+            confirmButtonColor:'#0A3871'
           })
         document.getElementById("alerta").style.color = "#FF0000";
         document.getElementById("alert").style.filter = "invert(34%) sepia(80%) saturate(6646%) hue-rotate(343deg) brightness(122%) contrast(131%)";
@@ -106,10 +110,13 @@ function desencriptar(){
         let txtencriptado = txtresultado.value;
         navigator.clipboard.writeText(txtencriptado);
         /*document.getElementById("texto-entrada").value = txtencriptado;*/
-        Swal.fire(
-            'Texto Copiado!',
-            'Tu texto fue copiado con exito!',
-            'success'
+        Swal.fire({
+            title: 'Texto Copiado!',
+            text:'Tu texto fue copiado con exito!',
+            icon: 'success',
+            color: '#0A3871',
+            confirmButtonColor:'#0A3871'
+        }
           );
       }
 
