@@ -20,8 +20,6 @@ header{
     flex-wrap: wrap;
 }
 
-
-
 textarea{
     resize: none;
     border: none;
@@ -32,8 +30,6 @@ textarea{
     outline: none;
     overflow: hidden;
 }
-
-
 
 .box-salida{
     width: 350px;
